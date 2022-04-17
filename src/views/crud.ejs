@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>CRUD</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row text-center">
+            <h4 class="w-100">Create a new user</h4>
+        </div>
+        <form action="/post-crud" method="POST">
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input class="form-control" type="email" name="email" id="">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input class="form-control" type="password" name="password" id="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">First Name</label>
+                        <input class="form-control" type="text" name="firstName" id="">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Last Name</label>
+                        <input class="form-control" type="text" name="lastName" id="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="">Address</label>
+                        <input class="form-control" type="text" name="address" id="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Phone number</label>
+                        <input class="form-control" type="text" name="phonenumber" id="">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <label for="">Sex</label>
+                        <select class="form-control" type="text" name="gender" id="">
+                            <option value="1">Male</option>
+                            <option value="0">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <label for="">Role</label>
+                        <select class="form-control" type="text" name="roleId" id="">
+                            <option value="1">Admin</option>
+                            <option value="2">Doctor</option>
+                            <option value="3">Patient</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-info" value="Sign up">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
